@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <title></title>    
     <script src="./Paho-mqtt.js" type="text/javascript"></script>
-
     <script>
         var hostname = '127.0.0.1',
             port = 8083,
@@ -14,7 +13,7 @@
             keepAlive = 100,
             cleanSession = false,
             ssl = false,
-            topic = '/device/status';
+            topic = "device/status";
 
         var client = new Paho.Client(hostname, port, clientId);
 
